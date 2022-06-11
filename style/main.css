@@ -50,7 +50,6 @@ body{
     height: 100vh;
     background-color: white;
     z-index: 1000000000000000000;
-    display: none;
 }
 .Quiz-container .model img{
     max-width: 100%;
