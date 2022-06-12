@@ -113,6 +113,11 @@ main .question{
     font-size: 42px;
     color: var(--mainColor);
 }
+media(max-width: 776px) {
+    main .question{
+        font-size: 35px;
+    }
+}
 main .answer-area{
     display: flex;
     justify-content: space-around;
