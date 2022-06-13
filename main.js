@@ -62,23 +62,16 @@ const checkAnswer = (data) => {
   let answers = Array.from(document.querySelectorAll(".answer-area .choice"));
   answers.forEach((el, ind) => {
     el.addEventListener("click", (e) => {
-      if (
-        e.target.className === `answer-${ind + 1} choice` ||
-        e.target.name === `span`
-      ) {
-        if (e.target.children[0].innerHTML === data.correctAnswer) {
+       let value = el.firstChild.innerHTML
+       let icon = el.lastChild;
+        if (value === data.correctAnswer) {
           success++;
-          let icon = e.target.children[1];
           icon.classList.add("fa-solid", "fa-check");
           el.style.backgroundColor = "green";
         } else {
-          let icon = e.target.children[1];
           icon.classList.add("fa-solid", "fa-xmark");
           el.style.backgroundColor = "red";
         }
-      } else {
-        return;
-      }
       setTimeout(() => {
         nextQues();
       }, 400);
