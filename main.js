@@ -88,6 +88,6 @@ const nextQues = () => {
   } else if (success >= count / 2) {
     main.innerHTML = `<div class= "finish"><divi><span style="color:rgb(46,154,109)">perfect</span> you answer ${success} from ${count}</divi"><div class="emoji">&#128512</div><h1>Winner</h1></div>`;
   } else {
-    main.innerHTML = `<div class= "finish"><div><span style="color:red">sory</span> you answer ${success} from ${count}</div><div class="emoji">&#128577</div><h1>ooops!</h1></div>`;
+    main.innerHTML = `<div class= "finish"><div><span style="color:red">sorry</span> you answer ${success} from ${count}</div><div class="emoji">&#128577</div><h1>ooops!</h1></div>`;
   }
 };
